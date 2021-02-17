@@ -107,7 +107,7 @@ module.exports = kconfig = async (kill, message) => {
 		
 		
         const mess = {
-            wait: 'Ok amor, espera un minuto...',
+            wait: 'Ok mono/a xuxetumare, espera un minuto...',
             error: {
                 St: 'Lo usaste mal jaja!\nPara usar esto, envíe o etiquete una foto con este mensaje, si es un gif, use el comando */gif*.',
                 Ki: 'Para eliminar administradores, primero debe eliminar su ADM.',
@@ -244,7 +244,7 @@ module.exports = kconfig = async (kill, message) => {
 		case 'samu330':
 		case 'samu':
 			//SI VAN A MODIFICAR EL BOT, PORFAVOR NO QUITAR NI MODIFICAR ESTA PARTE PORFAVOR, GRACIAS.
-    			await kill.reply(from, '😍🤗 *GRACIAS POR INTERESARTE EN MI* Y GRACIAS POR USAR MI BOT\n\n*TE GUSTARIA APOYARME?😖*\nPls no es complicado, solo te pido una suscripcion a mi canal:D\nSI?😰\nAIIII GRACIAS☺, AVER PS, AQUI TE DEJO MI CANAL:D\n\nhttps://www.youtube.com/channel/UCHD4T8Pfcv5PFVzsAbfAPZA\n\n_SI COMPARTES ME AYUDARIAS MAS_ *GRACIAS!😉*', id)
+    			await kill.reply(from, '😍🤗 *GRACIAS POR INTERESARTE EN MI* Y GRACIAS POR USAR MI BOT\n\n*TE GUSTARIA APOYARME?😖*\nPls no es complicado, solo te pido un pack a mi DM:D\nSI?😰\nAIIII GRACIAS☺, AVER PS :D\n\n *GRACIAS!😉*', id)
    			break
 			//________________________________________________________________________________________
 			
@@ -436,7 +436,7 @@ module.exports = kconfig = async (kill, message) => {
             const eu = await kill.getGroupMembers(groupId)
             const gostosa = eu[Math.floor(Math.random() * eu.length)]
 			console.log(gostosa.id)
-            await kill.sendTextWithMentions(from, `*ＤＥＴＥＣＴＯＲ   ＤＥ  ＣＨＩＣＡＳ ＣＡＬＩＥＮＴＥＳ👩‍⚕️*\n\n*pi pi pi pi*  \n*pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipi*\n\n@${gostosa.id.replace(/@c.us/g, '')} *ALTO AÍ🖐*\n\n*USTED ACABA DE RECIBIR DOS MULTAS*\n\n*1 por no decir buenos días, buenas tardes, buenas noches y otro por estar muy*\n\n*HOT🤤🔥*\n\n*valor de multa:*\n*TU FOTO DESNUD@ A MI PRIV kkkkk*`)
+            await kill.sendTextWithMentions(from, `*ＤＥＴＥＣＴＯＲ   ＤＥ  M A R A C A S ＣＡＬＩＥＮＴＥＳ👩‍⚕️*\n\n*pi pi pi pi*  \n*pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipi*\n\n@${gostosa.id.replace(/@c.us/g, '')} *ALTO AÍ🖐*\n\n*USTED ACABA DE RECIBIR DOS MULTAS*\n\n*1 por no decir buenos días, buenas tardes, buenas noches y otro por estar muy*\n\n*HOT🤤🔥*\n\n*valor de multa:*\n*TU FOTO DESNUD@ A MI PRIV kkkkk*`)
             await sleep(2000)
             break			
 
@@ -637,7 +637,7 @@ module.exports = kconfig = async (kill, message) => {
 		case 'program':
 			if (mute || pvmte) return console.log('Ignorando comando [Silence]')
 			if (isGroupMsg) return kill.reply(from, 'Es posible que este grupo no permita enlaces, así que use este comando en el PV ok?', id)
-			kill.sendLinkWithAutoPreview(from, 'https://chat.whatsapp.com/Dwu4XpOYOGCDHYDlSoZZG0', '¡Qué bueno que te hayas interesado en TeamBot! \n¡Aquí está nuestro grupo!!', id)
+			kill.sendLinkWithAutoPreview(from, 'https://chat.whatsapp.com/CTr959xpSTTISWGy2HAdqh', '¡Qué bueno que te hayas interesado en TeamBot! \n¡Aquí está nuestro grupo!!', id)
 			break
 			
 			
@@ -3534,7 +3534,7 @@ module.exports = kconfig = async (kill, message) => {
 			const timed = moment(t * 1000).format('DD/MM/YY HH:mm:ss')
 			const allin = `Hola usuário "@${sender.id}"!\n\nMe lleve ${processTime(t, moment())} segundos para responder😬Ando lag verdad?:(.\n\nAhora son exactamente "${timed}".\nAqui abajito estan mis funciones:D Porfavor tratame bien, si no quieres que deje tu grupo:).\n`
             kill.sendTextWithMentions(from, allin + help, id)
-            kill.reply(from, '👑De otros comandos tenemos...\n\n*/Admins* _⚠es para administradores._\n\n*/Kill* _🔥es solo para mi dueño._\n\n*/Adult* _😈🤤es el menú de comandos para adultos *(El favorito de Samu)* Ok no:D._\n\n*/Down* _📲📁es el menú de descarga de música y video._', id)
+            kill.reply(from, '👑De otros comandos tenemos...\n\n*/Admins* _⚠es para administradores._\n\n*/Kill* _🔥es solo para mi dueño._\n\n*/Adult* _😈🤤es el menú de comandos para adultos *(El favorito de gustavo)* Ok no:D._\n\n*/Down* _📲📁es el menú de descarga de música y video._', id)
             break
 
 

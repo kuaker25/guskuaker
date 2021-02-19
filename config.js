@@ -242,10 +242,10 @@ module.exports = kconfig = async (kill, message) => {
             }
             break
 			
-		case 'samu330':
-		case 'samu':
+		case 'gustavo':
+		case 'gus':
 			//SI VAN A MODIFICAR EL BOT, PORFAVOR NO QUITAR NI MODIFICAR ESTA PARTE PORFAVOR, GRACIAS.
-    			await kill.reply(from, '😍🤗 *GRACIAS POR INTERESARTE EN MI* Y GRACIAS POR USAR MI BOT\n\n*TE GUSTARIA APOYARME?😖*\nPls no es complicado, solo te pido una suscripcion a mi canal:D\nSI?😰\nAIIII GRACIAS☺, AVER PS, AQUI TE DEJO MI CANAL:D\n\nhttps://www.youtube.com/channel/UCHD4T8Pfcv5PFVzsAbfAPZA\n\n_SI COMPARTES ME AYUDARIAS MAS_ *GRACIAS!😉*', id)
+    			await kill.reply(from, '😍🤗 *GRACIAS POR INTERESARTE EN MI* Y GRACIAS POR USAR MI BOT\n\n*TE GUSTARIA APOYARME?😖*\nPls no es complicado, solo te pido un pack :D\nSI?😰\nAIIII GRACIAS☺, AVER PS, AQUI TE DEJO MI CANAL:D \n\n *GRACIAS!😉*', id)
    			break
 			//________________________________________________________________________________________
 			
@@ -1061,7 +1061,7 @@ module.exports = kconfig = async (kill, message) => {
 		case 'qr':
 			if (mute || pvmte) return console.log('Ignorando comando [Silence]')
 			const qrco = body.slice(4)
-			await kill.sendFileFromUrl(from, `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrco}`, '', 'Su mensaje fue insertado en este QRCode, disfrute.\n\nBy samu330-iris.', id)
+			await kill.sendFileFromUrl(from, `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrco}`, '', 'Su mensaje fue insertado en este QRCode, disfrute.\n\nBy gustavo-iris.', id)
 			break
 
 
@@ -2112,7 +2112,7 @@ module.exports = kconfig = async (kill, message) => {
 			if (mute || pvmte) return console.log('Ignorando comando [Silence]')
 			if (args.length == 1) {
 				const ip = await axios.get(`http://ipwhois.app/json/${body.slice(5)}`)
-				await kill.sendLinkWithAutoPreview(from, `http://www.google.com/maps/place/${ip.data.latitude},${ip.data.longitude}`, `\n✪ IP: ${ip.data.ip}\n\n✪ Tipo: ${ip.data.type}\n\n✪ Region: ${ip.data.region}\n\n✪ Cidad: ${ip.data.city}\n\n✪ Latitud: ${ip.data.latitude}\n\n✪ Longitud: ${ip.data.longitude}\n\n✪ Provedor: ${ip.data.isp}\n\n✪ Continente: ${ip.data.continent}\n\n✪ Sigla del continente: ${ip.data.continent_code}\n\n✪ País: ${ip.data.country}\n\n✪ Sigla del País: ${ip.data.country_code}\n\n✪ Capital del País: ${ip.data.country_capital}\n\n✪ DDI: ${ip.data.country_phone}\n\n✪ Países Vecinos: ${ip.data.country_neighbours}\n\n✪ Horário: ${ip.data.timezone} ${ip.data.timezone_name} ${ip.data.timezone_gmt}\n\n✪ Moneda: ${ip.data.currency}\n\n✪ Sigla da Moneda: ${ip.data.currency_code}\n\nBusqueda de IP realizada por Íris - Samu330!`, id)
+				await kill.sendLinkWithAutoPreview(from, `http://www.google.com/maps/place/${ip.data.latitude},${ip.data.longitude}`, `\n✪ IP: ${ip.data.ip}\n\n✪ Tipo: ${ip.data.type}\n\n✪ Region: ${ip.data.region}\n\n✪ Cidad: ${ip.data.city}\n\n✪ Latitud: ${ip.data.latitude}\n\n✪ Longitud: ${ip.data.longitude}\n\n✪ Provedor: ${ip.data.isp}\n\n✪ Continente: ${ip.data.continent}\n\n✪ Sigla del continente: ${ip.data.continent_code}\n\n✪ País: ${ip.data.country}\n\n✪ Sigla del País: ${ip.data.country_code}\n\n✪ Capital del País: ${ip.data.country_capital}\n\n✪ DDI: ${ip.data.country_phone}\n\n✪ Países Vecinos: ${ip.data.country_neighbours}\n\n✪ Horário: ${ip.data.timezone} ${ip.data.timezone_name} ${ip.data.timezone_gmt}\n\n✪ Moneda: ${ip.data.currency}\n\n✪ Sigla da Moneda: ${ip.data.currency_code}\n\nBusqueda de IP realizada por Íris - gustavo!`, id)
             } else {
 				await kill.reply(from, 'Especifique un IP de tipo IPV4.', id)
             }
@@ -2408,14 +2408,14 @@ module.exports = kconfig = async (kill, message) => {
 				if (!isBotGroupAdmins) return kill.reply(from, mess.error.Ba, id)
 				if (quotedMsg) {
 					const negquo = quotedMsgObj.sender.id
-					if (chief.includes(negquo)) return kill.reply(from, 'Si lo se....😖 esa persona arta, pero no lo puedo sacar por que el creo el grupo😰. Tendremos que segir awantandolo😬', id)
+					if (chief.includes(negquo)) return kill.reply(from, 'Si lo se....😖 aburre, pero no lo puedo sacar por que el creo el grupo😰. Tendremos que segir awantando al culiao noma😬', id)
 					await kill.sendTextWithMentions(from, `Expulsando participante @${negquo} del grupo...`)
 					await kill.removeParticipant(groupId, negquo)
 				} else {
 					if (mentionedJidList.length == 0) return kill.reply(from, 'Escribiste el comando muy mal, arréglalo y envíalo bien.', id)
 					await kill.sendTextWithMentions(from, `Expulsando participante ${mentionedJidList.map(x => `@${x.replace('@c.us', '')}`).join('\n')} del grupo...`)
 					for (let i = 0; i < mentionedJidList.length; i++) {
-						if (chief.includes(mentionedJidList[i])) return kill.reply(from, 'Si lo se....😖 esa persona arta, pero no lo puedo sacar por que el creo el grupo😰. Tendremos que segir awantandolo😬', id)
+						if (chief.includes(mentionedJidList[i])) return kill.reply(from, 'Si lo se....😖 aburre, pero no lo puedo sacar por que el creo el grupo😰. Tendremos que segir awantando al culiao noma😬', id)
 						if (ownerNumber.includes(mentionedJidList[i])) return kill.reply(from, 'Desafortunadamente, es un mienbro VIP, que no puedo expulsar.', id)
 						if (groupAdmins.includes(mentionedJidList[i])) return kill.reply(from, mess.error.Kl, id)
 						await kill.removeParticipant(groupId, mentionedJidList[i])
@@ -3527,7 +3527,7 @@ module.exports = kconfig = async (kill, message) => {
 			const timed = moment(t * 1000).format('DD/MM/YY HH:mm:ss')
 			const allin = `Hola usuário "@${sender.id}"!\n\nMe lleve ${processTime(t, moment())} segundos para responder😬Ando lag verdad?:(.\n\nAhora son exactamente "${timed}".\nAqui abajito estan mis funciones:D Porfavor tratame bien, si no quieres que deje tu grupo:).\n`
             kill.sendTextWithMentions(from, allin + help, id)
-            kill.reply(from, '👑De otros comandos tenemos...\n\n*/Admins* _⚠es para administradores._\n\n*/Kill* _🔥es solo para mi dueño._\n\n*/Adult* _😈🤤es el menú de comandos para adultos *(El favorito de Samu)* Ok no:D._\n\n*/Down* _📲📁es el menú de descarga de música y video._', id)
+            kill.reply(from, '👑De otros comandos tenemos...\n\n*/Admins* _⚠es para administradores._\n\n*/Kill* _🔥es solo para mi dueño._\n\n*/Adult* _😈🤤es el menú de comandos para adultos *(El favorito de gustavo y oscar)* Ok no:D._\n\n*/Down* _📲📁es el menú de descarga de música y video._', id)
             break
 
 
